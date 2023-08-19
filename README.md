@@ -27,16 +27,15 @@ The sum of two number is : 30
 Question1)
 In a program,input 3 numbers:A,B and C.You havet oout put the average of these 3 numbers.
 import java.util.Scanner;
-public class Main 
+public class side
 {
-     public static void main(String[] args) 
-     {
-        Scanner x = new Scanner(System.in);
-        float a = x.nextInt();
-        float b = x.nextInt();
-        float c = x.nextInt();
-        float avg = (a+b+c)/3;
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        float a=sc.nextFloat();
+        float b=sc.nextFloat();
+        float c=sc.nextFloat();
+        float avg=(a+b+c)/3;
         System.out.println(avg);
     }
-    
 }
