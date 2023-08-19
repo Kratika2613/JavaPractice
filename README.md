@@ -24,7 +24,8 @@ public class Main
 }
 Output:-
 The sum of two number is : 30
-Question1)
+
+Question2)
 In a program,input 3 numbers:A,B and C.You havet oout put the average of these 3 numbers.
 import java.util.Scanner;
 public class side
@@ -41,7 +42,7 @@ public class side
 }
 
 Question3)
-Entercostof3itemsfromtheuser(usingfloatdatatype)-a pencil,a pen and an eraser. You have to output the total cost of the items back to the user as their bill.(Add on : You can also try adding 18% gst tax to the items in the bill as an advanced problem)
+Enter cost of 3items from the user(using float data type)-a pencil,a pen and an eraser. You have to output the total cost of the items back to the user as their bill.
 
 import java.util.Scanner;
 public class side
