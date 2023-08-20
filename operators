@@ -23,3 +23,55 @@ Subtract=5
 Divide=2
 Multiply=50
 Remainder=0
+________________________________________________________________________________________________________________________________________________________________________________________________
+Unary Operator:-
+Q 2) Program of pre and post increment operator.
+
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=++a;   //pre increment
+        System.out.println(a);
+        System.out.println(b);
+
+        int x=10;
+        int y=x++;  //post increment
+        System.out.println(x);
+        System.out.println(y);
+        
+   }
+ }
+output:-
+11
+11
+11
+10
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Unary Operator:-
+Q 3) Program of pre and post decrement operator.
+
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=--a;   //pre increment
+        System.out.println(a);
+        System.out.println(b);
+
+        int x=10;
+        int y=x--;  //post increment
+        System.out.println(x);
+        System.out.println(y);
+        
+   }
+ }
+output:-
+9
+9
+9
+10
