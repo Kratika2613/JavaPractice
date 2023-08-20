@@ -41,3 +41,42 @@ ________________________________________________________________________________
 }
 Output:-
 Teenager
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Q 2) Program using if-else conditional statements.Print the largest of 2 number.
+public class greater {
+    public static void main(String[]args)
+    {
+        int a=10;
+        int b=20;
+        if(a>=b)
+        {
+            System.out.println("Value a is greater:"+a);
+        }
+        else
+        {
+            System.out.println("Value b is greater:"+b);
+        }
+    }
+}
+Output:-
+Value b is greater:20
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Q 3) Program using if-else conditional statements.Print if the number is odd or even.
+import java.util.Scanner;
+
+public class greater {
+    public static void main(String[] args) {
+        try (Scanner obj = new Scanner(System.in)) {
+             System.out.print("Enter a value: ");
+            int a = obj.nextInt();  // input=45
+
+            if (a % 2 == 0) {
+                System.out.println("The number is even");
+            } else {
+                System.out.println("The number is odd");
+            }
+        }
+    }
+}
+Output:-
+The number is odd
