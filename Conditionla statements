@@ -1,1 +1,19 @@
-
+Q 1) Program using if-else conditional statements.
+public class loop 
+{
+    public static void main(String[]args)
+    {
+        int age=21;
+        if(age>=18)
+      {
+            System.out.println("Eligible for voting and Driving");
+      }
+        else
+      {
+            System.out.println("Not Eligible");
+      }
+        
+    }
+}
+Output:-
+Eligible for voting and Driving
