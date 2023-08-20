@@ -80,3 +80,57 @@ public class greater {
 }
 Output:-
 The number is odd
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Q 3) Program using else if conditional statements.
+public class cond 
+{
+    public static void main(String[] args) 
+    {
+        int age = 13;
+         if(age>=18)
+         {
+            System.out.println("Adult");
+         }
+        else if(age>=13 && age<=18)
+        {
+            System.out.println("Teenager");
+        }
+        else
+        {
+            System.out.println("child");
+        }
+    }
+}
+Output:-
+Teenager
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Q 3) Program using else if conditional statements.Create a Tax calculator.
+import java.util.Scanner;
+
+public class income {
+    public static void main(String[]args)
+    {
+       try (Scanner obj = new Scanner(System.in)) {
+        int income = obj.nextInt();
+        int tax;
+        if(income<500000)
+        {
+           
+            tax=0;
+        }
+        else if(income>=500000 && income<1000000)
+        {
+           tax=(int) (income*0.2);
+           
+        }
+        else
+        {
+             tax=(int) (income*0.3);
+           
+        }
+         System.out.println("Your Tax is:"+tax);
+    }
+    
+    
+    }
+}   
