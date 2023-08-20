@@ -75,3 +75,141 @@ output:-
 9
 9
 10
+______________________________________________________________________________________________________________________________________________________________________________________________
+Relational Operator:-
+Q 4)Check whether the give conditions are true of false(Using ==).
+
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println(a==b);
+
+        int x=10;
+        int y=10;  
+        System.out.println(x==y);
+       
+        
+   }
+ }
+output:-
+false
+true
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Q 5)Check whether the give conditions are true of false(Using !=).
+
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println(a!=b);
+
+        int x=10;
+        int y=10;  
+        System.out.println(x!=y);
+       
+        
+   }
+ }
+output:-
+true
+false
+____________________________________________________________________________________________________________________________________________________________________________________________
+Q 5)Check whether the give conditions are true of false(Using <).
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println(a<b);
+
+        int x=10;
+        int y=11;  
+        System.out.println(x<y);
+       
+        
+   }
+ }
+output:-
+false
+true
+____________________________________________________________________________________________________________________________________________________________________________________________
+Q 5)Check whether the give conditions are true of false(Using >).
+
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println(a>b);
+
+        int x=12;
+        int y=11;  
+        System.out.println(x>y);
+       
+        
+   }
+ }
+output:-
+true
+true
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Q 5)Check whether the give conditions are true of false(Using >=).
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println(a>=b);
+
+        int x=12;
+        int y=12;  
+        System.out.println(x>=y);
+       
+        
+   }
+ }
+output:-
+true
+true
+____________________________________________________________________________________________________________________________________________________________________________________________
+Q 5)Check whether the give conditions are true of false(Using >=).
+
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println(a<=b);
+
+        int x=12;
+        int y=12;  
+        System.out.println(x<=y);
+       
+        
+   }
+ }
+output:-
+false
+true
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
