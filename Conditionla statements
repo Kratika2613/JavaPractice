@@ -17,3 +17,27 @@ public class loop
 }
 Output:-
 Eligible for voting and Driving
+________________________________________________________________________________________________________________________________________________________________________________________________-
+**public class loop 
+{
+    public static void main(String[]args)
+    {
+        int age=13;
+        if(age>=18)
+      {
+            System.out.println("Eligible for voting and Driving");
+      }
+      if((age<16)&&(age<18))
+      {
+            System.out.println("Teenager");
+      }
+       
+        else
+      {
+            System.out.println("Not Eligible");
+      }
+        
+    }
+}
+Output:-
+Teenager
