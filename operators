@@ -416,3 +416,19 @@ public class side
 }
 Output:-
 even
+____________________________________________________________________________________________________________________________________________________________________________________________
+Q 9)Program using ternary operator to check whethre the student is pass or fail.
+import java.util.Scanner;
+public class side
+{
+    public static void main(String[]args)
+    {
+        try (Scanner ob = new Scanner(System.in)) {
+            int marks =ob.nextInt(); // input = 98
+               String type =(marks>=33)?"Pass":"Fail";
+                System.out.println(type);
+        }
+    }
+}
+Output:-
+Pass
