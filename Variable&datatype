@@ -24,7 +24,7 @@ public class Main
 }
 Output:-
 The sum of two number is : 30
-
+________________________________________________________________________________________________________________________________________________________________________
 Question2)
 In a program,input 3 numbers:A,B and C.You havet oout put the average of these 3 numbers.
 import java.util.Scanner;
@@ -40,7 +40,7 @@ public class side
         System.out.println(avg);
     }
 }
-
+______________________________________________________________________________________________________________________________________________________________________
 Question3)
 Enter cost of 3items from the user(using float data type)-a pencil,a pen and an eraser. You have to output the total cost of the items back to the user as their bill.
 import java.util.Scanner;
@@ -60,4 +60,95 @@ public class side
         }
     }
 }
+_____________________________________________________________________________________________________________________________________________________________
+Question4)
+Calculate Area of cirlcle.
+
+import java.util.Scanner;
+public class side
+{
+    public static void main(String[]args)
+    {
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter radius:);
+       float radius = sc.nextFloat();
+       float Area   = 3.14*radius*radius;
+       System.out.println(Area);
+     }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q)Adding string variable to a string while printing.
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        String store = " Kratika";    
+
+        System.out.print("Hello"+store);
+   }
+ }
+Output:-
+Hello Kratika
+________________________________________________________________________________________________________________________________________________________________
+{
+  int x =15;
+      y =20;
+ System.out.print(x);
+}
+Output:-
+20  // Here 20 will overwrite 15
+
+________________________________________________________________________________________________________________________________________________________________
+Type Casting:-
+
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+      float a = 25.2f;
+      int   b = (int)a;
+      System.out.print(b);
+   }
+}
+
+output:-
+25  // Data is lost here as we converted float to int
+
+Type Promotion :-
+
+* Java automatically promotes each byte,short or char operand to int when evaluating an expression
+
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+     char = 'a';
+     char = 'b';
+     System.out.print((int)(b));
+     System.out.print((int)(a));
+     System.out.print(b-a);  // Here java directily considered b as integer and a as interger, and it can only be done in expression
+  }
+}
+output:-
+98
+97
+1
+__________________________________________________________________________________________________________________________________________________________________
+* If one operand is long, float ,or double the whole expression is promoted to long , float , double.
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+     int a = 10;
+    float b =20.25f;
+     long c =25;
+     double d =30;
+     double ans =a+b+c+d;
+     System.out.print(ans); 
+}
+Output:-
+85.25 // First Java converted all small data type into big data type that is double 
+
+
 
