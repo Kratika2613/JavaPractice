@@ -81,7 +81,7 @@ public class greater {
 Output:-
 The number is odd
 _____________________________________________________________________________________________________________________________________________________________________________________________
-Q 3) Program using else if conditional statements.
+Q 4) Program using else if conditional statements.
 public class cond 
 {
     public static void main(String[] args) 
@@ -104,7 +104,7 @@ public class cond
 Output:-
 Teenager
 _____________________________________________________________________________________________________________________________________________________________________________________________
-Q 3) Program using else if conditional statements.Create a Tax calculator.
+Q 5) Program using else if conditional statements.Create a Tax calculator.
 import java.util.Scanner;
 
 public class income {
@@ -129,8 +129,30 @@ public class income {
            
         }
          System.out.println("Your Tax is:"+tax);
-    }
-    
-    
+    }  
     }
 }   
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Q 6) Program using else if conditional statements.Print the largest of 3.
+public class largest {
+    public static void main(String[]args)
+    {
+        int a=10;
+        int b=50;
+        int c=30;
+        if(a>=b && a>=c)
+        {
+            System.out.println("a is greater:"+a);
+        }
+        else if(b>=c)
+        {
+             System.out.println("b is greater:"+b);
+        }
+        else
+        {
+            System.out.println("c is greater:"+c); 
+        }
+    }
+}
+Output:-
+b is greater:50
