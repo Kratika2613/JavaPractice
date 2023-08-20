@@ -207,9 +207,99 @@ output:-
 false
 true
 ____________________________________________________________________________________________________________________________________________________________________________________________
+Logical Operator:-
+Q 6)Check whether the give conditions is true or false(Using logical AND(&&)).
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println((a>b)&&(b<a));
+       
+        
+   }
+ }
+output:-
+true
 
+*public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println((a<b)&&(b<a));
+       
+        
+   }
+ }
+output:-
+false
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Q 7)Check whether the give conditions is true or false(Using Logical OR(||)).
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println((a<b)||(b<a));
+       
+        
+   }
+ }
+output:-
+true
 
+*public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println((a<b)||(b>a));
+       
+        
+   }
+ }
+output:-
+false
+_____________________________________________________________________________________________________________________________________________________________________________________________
+Q 7)Check whether the give conditions is true or false(Using Logical NOT(!)).
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println(!(a<b));
+       
+        
+   }
+ }
+output:-
+true
 
-
-
+*
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println(!(b<a));
+       
+        
+   }
+ }
+output:-
+false
+______________________________________________________________________________________________________________________________________________________________________________________________
 
