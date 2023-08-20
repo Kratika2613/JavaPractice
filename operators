@@ -402,3 +402,17 @@ ________________________________________________________________________________
 Output:-
 20
 20
+____________________________________________________________________________________________________________________________________________________________________________________________
+Ternary Operator:-
+Q 9)Program using ternary operator to calculate the number is even or odd.
+public class side
+{
+    public static void main(String[]args)
+    {
+       int number =4;
+       String type =(number%2==0)?"even":"odd";
+        System.out.println(type);
+    }
+}
+Output:-
+even
