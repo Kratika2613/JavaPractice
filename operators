@@ -1,0 +1,25 @@
+Operators:-
+
+Binary Operators:-
+Q 1)Programm using all binary operators.
+
+public class name 
+ {
+     public static void main(String[] args) 
+  {
+    
+        int a=10;
+        int b=5;   
+        System.out.println("Add="+(a+b));
+        System.out.println("Subtract="+(a-b));
+        System.out.println("Divide="+(a/b));
+        System.out.println("Multiply="+(a*b));
+        System.out.println("Remainder="+(a%b));
+   }
+ }
+Output:-
+Add=15
+Subtract=5
+Divide=2
+Multiply=50
+Remainder=0
