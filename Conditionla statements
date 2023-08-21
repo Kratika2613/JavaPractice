@@ -211,4 +211,22 @@ public class calculator {
     }
 }
 ___________________________________________________________________________________________________________________________________________________________________________________________
-
+Q 7)Write a Java program to get a number from the user and print whether it is positive or negative.
+import java.util.Scanner;
+public class negpos {
+    public static void main(String[] args) 
+    {
+        try (Scanner sc = new Scanner(System.in)) 
+        {
+            System.out.println("Enter the number:");
+            int a = sc.nextInt();
+            if(a<0)
+            {
+                System.out.println("The number negative is:"+a);
+            }
+            else{
+                System.out.println("The number positive is:"+a);
+            }
+        }
+    }
+}
