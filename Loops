@@ -50,7 +50,7 @@ Output:-
 9
 10
 =============================================================================================================================================================================================
-Q 1)Print the numbers from 1 to n.
+Q 2)Print the numbers from 1 to n.
 import java.util.Scanner;
 public class loop 
 {
@@ -75,6 +75,30 @@ Output:-
 3
 4
 5
-
+=============================================================================================================================================================================================
+Q 3)Print the sum of first N natural number.
+import java.util.Scanner;
+public class loop 
+{
+   public static void main(String[]args)
+   {
+      try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the value:");
+            int Number = sc.nextInt();
+            int sum=0;
+            int i=1;
+            while(i<=Number)
+            {
+                  sum=sum+i;
+                 i++;
+            }
+          System.out.println("The sum is:"+sum);  
+      }
+   }   
+}
+Output:-
+Enter the value:
+6
+The sum is:21
 
 
