@@ -125,3 +125,20 @@ public class Table
     }
 }
 
+___________________________________________________________________________________________________________________________________________________________________________________________
+Q 4)Write a program to print sqaure pattern.
+public class loop 
+{
+   public static void main(String[]args)
+   {
+      for(int i=1;i<=4;i++)
+      {
+         System.out.println("****");
+      }
+   }
+}
+Output:-
+****
+****
+****
+****
