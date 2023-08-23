@@ -143,7 +143,7 @@ Output:-
 ****
 ****
 ____________________________________________________________________________________________________________________________________________________________________________________________
-Q 4)Write a program to print reverse the given number.
+Q 4)Write a program to print reverse of a given number.
 public class loop 
 {
    public static void main(String[]args)
@@ -156,6 +156,24 @@ public class loop
          n = n/10;
       }
    }
+}
+Output:-
+99801
+____________________________________________________________________________________________________________________________________________________________________________________________
+Q 4)Write a program to print reverse the given number.
+public class Main
+{
+	public static void main(String[] args) {
+	    int n = 10899;
+	    int rev = 0;
+	    while(n>0)
+	    {
+	        int lastDigit = n%10;
+	        rev = (rev * 10) + lastDigit;
+	        n = n/10;
+	    }
+		System.out.println(rev);
+	}
 }
 Output:-
 99801
