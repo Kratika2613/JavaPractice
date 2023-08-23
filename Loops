@@ -211,4 +211,24 @@ public class Main
 		
 	}
 }
-
+____________________________________________________________________________________________________________________________________________________________________________________________
+Program using do while loop.
+===========================
+public class Main
+{
+	public static void main(String[] args) {
+	    int counter= 1;
+	   do
+	    {
+	        System.out.println("Hello Kratika");
+	        counter++;
+	    }
+		while(counter<=5);
+	}
+}
+Output:-
+Hello Kratika
+Hello Kratika
+Hello Kratika
+Hello Kratika
+Hello Kratika
