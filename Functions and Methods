@@ -1,0 +1,10 @@
+public class practice
+{
+public static void printHelloWorld() // Function defined
+{
+ System.out.println("HEllo World");
+}
+public static void main(String[]args){
+    printHelloWorld();    //Function call
+}
+}
