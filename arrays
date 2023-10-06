@@ -440,3 +440,78 @@ Output:-
 10
 
 total sub arrays are:15
+
+=====================================================================================================================================================================================================================================
+Q)Print the sum of maximum sub array.
+
+ public class maxsub {
+
+    public static void MaxSubarrSum(int num[]){ 
+           
+            int currsum = 0;
+            int maxsum = Integer.MIN_VALUE;
+             for(int i=0; i<num.length; i++){
+                int start = i;
+            
+            for(int j=i; j<num.length; j++){
+                int end = j;
+                currsum = 0;
+                for(int k= start; k<=end; k++){
+
+                    currsum += num[k];
+                    
+                   
+                }
+                System.out.println("The sum of every sub array is:"+currsum);
+                if(maxsum<currsum)
+                {
+                    maxsum = currsum;
+                }
+               
+                System.out.println();
+            }
+          
+        }
+         System.out.println("maximum sum is:"+maxsum);
+    }
+    public static void main(String args[]){
+        int num[]={2,4,6,8,10};
+        MaxSubarrSum(num);
+    }
+    
+}
+Output:-
+=======
+The sum of every sub array is:2
+
+The sum of every sub array is:6
+
+The sum of every sub array is:12
+
+The sum of every sub array is:20
+
+The sum of every sub array is:30
+
+The sum of every sub array is:4
+
+The sum of every sub array is:10
+
+The sum of every sub array is:18
+
+The sum of every sub array is:28
+
+The sum of every sub array is:6
+
+The sum of every sub array is:14
+
+The sum of every sub array is:24
+
+The sum of every sub array is:8
+
+The sum of every sub array is:18
+
+The sum of every sub array is:10
+
+maximum sum is:30
+
+
