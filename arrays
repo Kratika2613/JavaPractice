@@ -333,3 +333,110 @@ Output:-
 (15,18)
 
 Total Pairs are:15
+===================================================================================================================================================================================================================================
+Q) Print Sub arrays.
+
+public class subarray {
+
+    public static void printSubArray(int num[]){
+        for(int i=0; i<num.length; i++){
+            int start = i;
+            
+            for(int j=i; j<num.length; j++){
+                int end = j;
+
+                for(int k= start; k<=end; k++){
+
+                    System.out.print(num[k]+" ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
+    }
+    public static void main(String args[]){
+        int num[]={2,4,6,8,10};
+        printSubArray(num);
+    }
+    
+}
+
+Output:-
+=======
+2 
+2 4
+2 4 6
+2 4 6 8
+2 4 6 8 10
+
+4
+4 6
+4 6 8
+4 6 8 10
+
+6
+6 8
+6 8 10
+
+8
+8 10
+
+10
+============================================================================================================================================================================================================================
+
+****Updated above question finding total number of sub arrays.
+
+public class subarray {
+
+    public static void printSubArray(int num[]){ 
+        int n = num.length;
+         int totalsb = n*(n+1)/2;
+        for(int i=0; i<n; i++){
+           
+            int start = i;
+            
+            for(int j=i; j<n; j++){
+                int end = j;
+
+                for(int k= start; k<=end; k++){
+
+                    System.out.print(num[k]+" ");
+                }
+               
+                System.out.println();
+            }
+            System.out.println();
+        }
+         System.out.println("total sub arrays are:"+totalsb);
+    }
+    public static void main(String args[]){
+        int num[]={2,4,6,8,10};
+        printSubArray(num);
+    }
+    
+}
+
+Output:-
+=======
+2 
+2 4
+2 4 6
+2 4 6 8
+2 4 6 8 10
+
+4
+4 6
+4 6 8
+4 6 8 10
+
+6
+6 8
+6 8 10
+
+8
+8 10
+
+10
+
+total sub arrays are:15
