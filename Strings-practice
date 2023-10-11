@@ -18,6 +18,7 @@ HII,THIS IS KRATIKA!  //INPUT GIVEN BY THE USER
 HII,THIS IS KRATIKA!
 ==================================================================================================================================================
 FINDING THE LENGTH OF GIVE STRING IN JAVA :-
+-----------------------------------------
 import java.util.Scanner;
 
 public class stringinput {
@@ -32,3 +33,20 @@ OUTPUT:-
 -------
 The length of the given string is:15
 ====================================================================================================================================================
+STRING CONCATENATION IN JAVA :-
+-----------------------------
+
+public class stringinput {
+
+ public static void main(String[] args) {
+        String firstName = "Kratika";
+        String lastName = "Pachori";
+        String fullName = firstName + " " + lastName;
+        System.out.println(fullName);
+    }
+}
+
+OUTPUT:-
+-------
+Kratika Pachori
+
