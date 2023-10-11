@@ -50,3 +50,24 @@ OUTPUT:-
 -------
 Kratika Pachori
 
+=========================================================================================================================================================
+USING charAt METHOD IN JAVA :-
+
+public class stringinput {
+    public static void Printletter(String str){
+        for(int i=0; i<str.length(); i++){
+            System.out.print(str.charAt(i));
+        }
+        System.out.println();
+    }
+        
+ public static void main(String[] args) {
+        String firstName = "Kratika";
+        String lastName = "Pachori";
+        String fullName = firstName + " " + lastName;
+        Printletter(fullName);
+    }
+}
+OUTPUT:-
+-------
+Kratika Pachori
