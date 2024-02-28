@@ -326,4 +326,881 @@ public class arraypr
         }
     }
 }
+//================================================================================================
+// /*import java.util.Scanner;
+
+// public class coaching {
+//     public static void main(String[]args)
+//     {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the number to find the prime number to that range:");
+//         int num = sc.nextInt();
+
+//         for(int i =2; i<=num; i++)
+//         {
+//             int j;
+//                for( j=2; j<=i-1; j++)
+//             if(i%j==0){
+//                 break;
+//             }
+//             if(i==j){
+//                 System.out.println(i);
+//             }
+//         }
+//     }
+// }*/
+
+// //====================================================================================================
+
+// import java.util.Scanner;
+
+// public class coaching {
+//     public static void main(String[]args){
+//         try (Scanner sc = new Scanner(System.in)) {
+//             System.out.println("Enter num 1:");
+//             int num1 = sc.nextInt();
+//             System.out.println("Enter num 2:");
+//             int num2 = sc.nextInt();
+//             int max = num1> num2? num1 : num2;
+//             int lcm = max;
+//             while(true){
+//                 if(lcm%num1==0 && lcm%num2==0){
+//                     System.out.println(lcm);
+//                     break;
+//                 }
+//                 lcm = lcm+max;
+//             }
+//         }
+//     }
+// }
+
+//====================================================================================
+// import java.util.Scanner;
+// public class coaching{
+//     public static void main(String[]args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter num:");
+//         int n = sc.nextInt();
+//         double series=0;
+//         double res =0;
+//         for(int i =0; i<=n; i++)
+//         {
+
+//              series =Math.pow(10, i);
+//              res= res+ series;
+//              System.out.print(res + " ");
+//              if(i<n){
+//                 System.out.print("+");
+//              }
+//         }
+//     }
+// }
+
+//=======================================================================
+
+// import java.util.Scanner;
+
+// public class coaching{
+//     public static void main(String[]args){
+//       Scanner sc = new Scanner(System.in);
+//       System.out.println("Enter num:");
+//       int n = sc.nextInt();
+//       int arr[] = new int[n];
+
+//       for(int i= 0;i< arr.length; i++)
+//       {
+//         arr[i] = sc.nextInt();
+//       }
+//       for(int i=0; i<arr.length; i++){
+//         System.out.print(arr[i]+" ");
+//       }
+//     }
+// }
+
+// import java.util.Scanner;
+
+// public class coaching{
+//      public static void main(String[]args){
+//      Scanner sc = new Scanner(System.in);
+//       System.out.println("Enter num:");
+//     int n = sc.nextInt();
+//        int arr[] = new int[n];
+
+//       for(int i= 0;i< arr.length; i++)
+//       {
+//         arr[i] = sc.nextInt();
+//      }
+//        for(int i=n-1; i>=0 ; i--){
+//          System.out.print(arr[i]+" ");
+//        }
+//      }
+// }
+
+//========================================================================
+// import java.util.Scanner;
+
+// public class coaching {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int numLength = sc.nextInt();
+//         int num[] = new int[numLength];
+
+//         for (int i = 0; i < num.length; i++) {
+//             num[i] = sc.nextInt();
+//         }
+
+//         System.out.print("Positive numbers: ");
+//         for (int i = 0; i < num.length; i++) {
+//             if (num[i] > 0) {
+//                 System.out.print(num[i]);
+//                 if (i < num.length - 1 && num[i + 1] > 0) {
+//                     System.out.print(", ");
+//                 }
+//             }
+//         }
+
+//         System.out.println(); // Move to the next line
+
+//         System.out.print("Negative numbers: ");
+//         for (int i = 0; i < num.length; i++) {
+//             if (num[i] < 0) {
+//                 System.out.print(num[i]);
+//                 if (i < num.length - 1 && num[i + 1] < 0) {
+//                     System.out.print(", ");
+//                 }
+//             }
+//         }
+//     }
+// }
+
+//==============================================================================
+// import java.util.Scanner;
+// public class coaching{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int arr[] = {5,8,2,1,4};
+
+//         //Bubble sorting
+//         for(int i=0;i<arr.length-1;i++){
+//             for(int j =0 ;j<arr.length-1-i;j++){
+//                 if(arr[j] > arr[j+1])
+//                  {
+//                 int temp =arr[j+1];
+//                 arr[j+1] = arr[j];
+//                 arr[j] =temp;
+//                 }
+//             }
+//         }
+
+//         for(int i=0; i<arr.length ; i++){
+//             System.out.print(arr[i] +  " ");
+//         }
+//         System.out.println();
+
+//         for(int i=arr.length-1; i>=0 ; i--){
+//             System.out.print(arr[i] +  " ");
+//         }
+//     }
+// }
+
+//=========================================================================
+// import java.util.Scanner;
+
+// public class coaching {
+//     public static void SumAvg(int[] arr) {
+//         try (Scanner sc = new Scanner(System.in)) {
+//             int n = sc.nextInt();
+
+//             double sum = 0;
+//             double avg = 0;
+
+//             for (int i = 0; i < arr.length; i++) {
+//                 arr[i] = sc.nextInt();
+//                 sum = arr[i] + sum;
+//             }
+
+//             avg = sum / n;
+
+//             System.out.println("The sum is:" + sum);
+//             System.out.println("The avg is:" + avg);
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         try (Scanner sc = new Scanner(System.in)) {
+//             System.out.println("Enter the size of an array:");
+//             int size = sc.nextInt();
+//             int[] arr = new int[size];
+//             SumAvg(arr);
+//         }
+//     }
+// }
+
+//=====================================================================
+
+// import java.util.Scanner;
+// public class coaching{
+//     public static void main(String[]args){
+//         try (Scanner sc = new Scanner(System.in)) {
+//             System.out.println("Enter the number:");
+//             int n = sc.nextInt();
+
+//             Outer:
+//             for(int i=2; i<=n; i++){
+//                 for(int j =2; j<=i-1; j++){
+//                     if(i%j==0){
+//                         continue Outer;
+//                     }
+//                 }
+//                System.out.println(i); 
+//             }
+//         }
+//     }
+// }
+
+//=========================================================================
+
+//practice by own//
+
+// import java.util.Scanner;
+
+// public class coaching{
+//     public static void main(String[]args){
+//         Scanner sc = new Scanner(System.in);
+//         double num = sc.nextInt();
+//         double sum= 0;
+//         for(int i =0; i<=num; i++){
+//             double store = Math.pow(10, i);
+//             sum = store + sum;
+//             System.out.print(sum);
+//             if(i<num){
+//             System.out.print("+");
+//             }
+//         }
+//     }
+// }
+//===================================================================
+
+// import java.util.*;
+// public class coaching{
+
+// public static void RePrint(int[]arr){
+//     Scanner sc = new Scanner(System.in);
+//     for(int i =0; i<arr.length; i++){
+//         arr[i] = sc.nextInt();
+
+//     }
+//      for(int i =0; i<arr.length; i++){
+//      System.out.print(arr[i]);
+//      }
+// }
+
+// public static void main(String[]args){
+//     Scanner sc = new Scanner(System.in);
+//     System.out.println("Enter num:");
+//     int n = sc.nextInt();
+//     int []arr = new int[n];
+//      RePrint(arr);
+// }
+// }
+
+//===============================================================================
+
+// import java.util.*;
+// public class coaching{
+//     public static void Print(int []arr){
+//         Scanner sc =new Scanner(System.in);
+//         System.out.println("Enter the array:");
+//         for(int i=0; i<arr.length; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Reverse(arr);
+//     }
+//     public static void Reverse(int[]arr){
+//         System.out.println("Reversing arr:");
+//         for(int i=arr.length-1; i>=0; i--){
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc =new Scanner(System.in);
+//         System.out.println("enter size of arr:");
+//         int size =sc.nextInt();
+//         int arr[] = new int[size];
+//         Print(arr);
+//     }
+// }
+
+//======================================================================
+
+// import java.util.Scanner;
+// public class coaching{
+//     public static void MaxElement(int[]arr){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter array elements:");
+//         for(int i=0; i<arr.length; i++)
+//         {
+//             arr[i] = sc.nextInt();
+//         }
+//         int maxElem = arr[0];
+//         int index =0;
+//         for(int i=1; i<arr.length;i++){
+//             if(arr[i]>maxElem){
+//                 maxElem = arr[i];
+//                 index = i;
+//             }
+//         }
+//         System.out.println("The largest element is at index:"+index+" element is:"+maxElem);
+//     }
+//     public static void main(String[]args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of array:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         MaxElement(arr);
+//     }
+// }
+//===============================================================================
+// import java.util.Scanner;
+// public class coaching{
+//     public static void MaxElement(int[]arr){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter array elements:");
+//         for(int i=0; i<arr.length; i++)
+//         {
+//             arr[i] = sc.nextInt();
+//         }
+//         int maxElem = arr[0];
+//         int index =0;
+//         for(int i=1; i<arr.length;i++){
+//             if(arr[i]<maxElem){
+//                 maxElem = arr[i];
+//                 index = i;
+//             }
+//         }
+//         System.out.println("The largest element is at index:"+index+" element is:"+maxElem);
+//     }
+//     public static void main(String[]args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of array:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         MaxElement(arr);
+//     }
+// }
+//=================================================================================
+// import java.util.*;
+
+// public class coaching {
+//     public static void TakingInputInArray(int[] arr) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the array elements:");
+//         for (int i = 0; i < arr.length; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         SecondLargest(arr);
+//     }
+//     public static void SecondLargest(int[] arr) {
+//         for (int i = 0; i < arr.length; i++) {
+//             for (int j = 0; j < arr.length - 1 - i; j++) {
+//                 if (arr[j] > arr[j + 1]) {
+//                     int temp = arr[j];
+//                     arr[j] = arr[j + 1];
+//                     arr[j + 1] = temp;
+//                 } else {
+//                     continue;
+//                 }
+//             }
+//         }
+//         System.out.println("The second largest element is:" + arr[arr.length - 2]);
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of arr:");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         TakingInputInArray(arr);
+//     }
+// }
+//=======================================================================
+// import java.util.*;
+// public class coaching{
+//     public static void InputArray(int[]arr){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the array elements:");
+//         for(int i=0; i<arr.length; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Pallindrome(arr);
+//     }
+//     public static void Pallindrome(int[]arr){
+//         int low = 0;
+//         int high = arr.length-1;
+//         int mid = (low+high)/2;
+//         for(;low<=mid;low++){
+//             for(;high>=mid;high--){
+//                 if(arr[low]==arr[high]){
+//                     low++;
+//                     high--;
+//                     System.out.println("pallindrome");
+//                 }
+//                 else{
+//                     System.out.println("It's not a pallindrome");
+//                     break;
+//                 }
+//             }
+
+//         }
+//     }
+//     public static void main(String[]args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of arr:");
+//         int size = sc.nextInt();
+//         int[]arr = new int[size];
+//         InputArray(arr);
+//     }
+// }
+
+// import java.util.*;
+
+// public class coaching {
+//     public static void InputArray(int[] arr) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the array elements:");
+//         for (int i = 0; i < arr.length; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         Pallindrome(arr);
+//     }
+
+//     public static void Pallindrome(int[] arr) {
+//         int low = 0;
+//         int high = arr.length - 1;
+//         boolean isPallindrome = true;
+//         while (low < high) {
+//             if (arr[low] != arr[high]) {
+//                 isPallindrome = false;
+//                 break;
+//             }
+//             low++;
+//             high--;
+//         }
+//         if (isPallindrome) {
+//             System.out.println("It is a Pallindrome");
+//         } else {
+//             System.out.println("It is not a pallindrome");
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of arr:");
+//         int size = sc.nextInt();
+//         int[] arr = new int[size];
+//         InputArray(arr);
+//     }
+// }
+//=============================================================================
+// import java.util.*;
+
+// public class coaching {
+//     public static void PrintArray(int[] arr) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the array elements:");
+//         for (int i = 0; i < arr.length; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         ArrayRotation(arr);
+//     }
+
+//     public static void ArrayRotation(int[] arr) {
+//         if (arr.length <= 1) {
+//             return;
+//         }
+//         int temp = arr[0];
+//         for (int i = 0; i < arr.length - 1; i++) {
+//             arr[i] = arr[i + 1];
+//         }
+//         arr[arr.length - 1] = temp;
+//         System.out.print("Array left rotation by 1: ");
+//         System.out.println();
+//         for (int i = 0; i < arr.length; i++) {
+
+//             System.out.println(arr[i] + " ");
+//         }
+
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of arr:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         PrintArray(arr);
+//     }
+// }
+
+// import java.util.*;
+
+// public class coaching {
+//     public static void PrintArray(int[] arr) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the array elements:");
+//         for (int i = 0; i < arr.length; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         ArrayRotation(arr);
+//     }
+
+//     public static void ArrayRotation(int[] arr) {
+//         if (arr.length <= 1) {
+//             return;
+//         }
+//         int temp = arr[arr.length-1];
+//         for (int i = arr.length-1; i>0; i--) {
+//             arr[i] = arr[i-1];
+//         }
+//         arr[0] = temp;
+//         System.out.print("Array right rotation by 1: ");
+//         System.out.println();
+//         for (int i = 0; i < arr.length; i++) {
+
+//             System.out.println(arr[i] + " ");
+//         }
+
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of arr:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         PrintArray(arr);
+//     }
+// }
+
+//=======================================================================================
+// import java.util.*;
+
+// public class coaching {
+//     public static void PrintArray(int[] arr,int k) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the array elements:");
+//         for (int i = 0; i < arr.length; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         ArrayRotation(arr,k);
+//     }
+// public static void ArrayRotation(int[] arr,int k) {
+//     int n = arr.length;
+//     k= k%n;
+//     int temp[] = new int [k];
+
+//     for(int i =0; i<k; i++){
+//         temp[i] = arr[i];
+//     }
+
+//     for(int i=k; i<n;i++){
+//         arr[i-k] = arr[i];
+//     }
+//     for(int i =0; i<k; i++){
+//         arr[n-k+i] = temp[i];
+//     }
+
+// }
+// public static void main(String[]args){
+//     Scanner sc = new Scanner(System.in);
+//     System.out.println("Enter the size of array:");
+//     int n = sc.nextInt();
+//     int arr[] = new int [n];
+//     System.out.println("Enter the number of rotation:");
+//     int k = sc.nextInt();
+//     PrintArray(arr, k);
+//     System.out.println("Rotated elements are:");
+//     for(int i=0; i<arr.length; i++){
+//         System.out.println(arr[i]+" ");
+//     }
+// }
+// }
+
+//===============================================================================
+// import java.util.*;
+// public class coaching{
+//     public static void InputArray(int arr[],int k){
+//         Scanner sc = new Scanner (System.in);
+//         System.out.println("Enter the array elements:");
+//         for(int i=0; i<arr.length; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         ArrayRotation(arr,k);
+//     }
+//     public static void ArrayRotation(int[]arr , int k) {
+//         int n = arr.length;
+//         k = k%n;
+//         int temp[] = new int[k];
+//         for(int i=n-k ; i<n; i++){
+//             temp[i-(n-k)] = arr[i];
+//         }
+//         for(int i =n-1; i>=k; i--){
+//             arr[i] = arr[i-k];
+//         }
+//         for(int i=0; i<k; i++){
+//             arr[i] = temp[i];
+//         }
+//         System.out.println("Rotated elements are:");
+//         for(int i=0; i<n; i++){
+//             System.out.println(arr[i]+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter the size of array:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         System.out.println("Enter the number of rotation:");
+//         int k = sc.nextInt();
+//         InputArray(arr, k);
+//     }
+
+// }
+//==============================================================
+// import java.util.*;
+// public class coaching{
+//     public static void InputArray(int arr[],int k){
+//         Scanner sc = new Scanner (System.in);
+//         System.out.println("Enter the array elements:");
+//         for(int i=0; i<arr.length; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         ArrayRotation(arr,k);
+//     }
+//     public static void ArrayRotation(int[]arr , int k) {
+//         int n = arr.length;
+//         k = k%n;
+//         int temp[] = new int[k];
+//         for(int i=n-k ; i<n; i++){
+//             temp[i-(n-k)] = arr[i];
+//         }
+//         for(int i =n-1; i>=k; i--){
+//             arr[i] = arr[i-k];
+//         }
+//         for(int i=0; i<k; i++){
+//             arr[i] = temp[i];
+//         }
+//         System.out.println("Rotated elements are:");
+//         for(int i=0; i<n; i++){
+//             System.out.println(arr[i]+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter the size of array:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         System.out.println("Enter the number of rotation:");
+//         int k = sc.nextInt();
+//         InputArray(arr, k);
+//     }
+
+// }
+//==============================================================
+// import java.util.*;
+
+// public class coaching 
+// {
+//     public static void InputArray(int arr[], int target) 
+//     {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the array elements:");
+//         for (int i = 0; i < arr.length; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         int index = ArrayRotation(arr, target);
+//         if (index != -1) {
+//             System.out.println("Index of the target element " + target + " is: " + index);
+//         } else {
+//             System.out.println("Target element " + target + " not found in the array.");
+//         }
+//     }
+
+//     public static int ArrayRotation(int[] arr, int target) {
+//         for (int i = 0; i < arr.length; i++) {
+//             if (arr[i] == target) {
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter the size of array:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         System.out.println("Enter the number of rotation:");
+//         int target = sc.nextInt();
+//         InputArray(arr, target);
+//     }
+//============================================================================
+// import java.util.*;
+
+// public class coaching {
+//     public static void InputArray(int arr[], int target) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the array elements:");
+//         for (int i = 0; i < arr.length; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         Arrays.sort(arr);  // Sort the array after input
+//         int index = ArrayRotation(arr, target);
+//         if (index != -1) {
+//             System.out.println("Index of the target element " + target + " is: " + index);
+//         } else {
+//             System.out.println("Target element " + target + " not found in the array.");
+//         }
+//     }
+
+//     public static int ArrayRotation(int[] arr, int target) {
+//         int low = 0;
+//         int high = arr.length - 1;
+
+//         while (low <= high) {
+//             int mid = (low + high) / 2;  
+
+//             if (arr[mid] == target) {
+//                 return mid;
+//             } else if (arr[mid] < target) {
+//                 low = mid + 1;
+//             } else {
+//                 high = mid - 1;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of array:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         System.out.println("Enter the targeted element:");
+//         int target = sc.nextInt();
+//         InputArray(arr, target);
+//     }
+// }
+//=================================================================================
+// import java.util.*;
+
+// public class coaching 
+// {
+//     public static void InputArray(int arr[]) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter array elements:");
+//         for (int i = 0; i < arr.length; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         NegativeLeftPositiveRight(arr);
+//     }
+
+//     public static void NegativeLeftPositiveRight(int[] arr) {
+//         if (arr.length < 2) {
+//             System.out.println("Array should have at least two elements for swapping.");
+//             return;
+//         }
+
+//         int left = 0;
+//         int right = arr.length - 1;
+//         while (left <= right) {
+//             if (arr[left] < 0) {
+//                 left++;
+//             } else if (arr[right] >= 0) {
+//                 right--;
+//             } else {
+//                 int temp = arr[left];
+//                 arr[left] = arr[right];
+//                 arr[right] = temp;
+//                 left++;
+//                 right--;
+//             }
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of array:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         InputArray(arr);
+
+//         System.out.println("After swapping:");
+//         System.out.println(Arrays.toString(arr)); // Use Arrays.toString to print the array
+//     }
+// }
+//======================================================================================================
+// import java.util.*;
+// public class coaching{
+//     public static void InputArray(int[]arr) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter array elements:");
+//         for(int i=0; i<arr.length; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         BubbleSort(arr);
+//     }
+//     public static void BubbleSort(int[]arr){
+//         for(int i=0; i<(arr.length-1/2); i++){
+//             for(int j =0; j<arr.length-1-i; j++){
+//                 if(arr[j]>arr[j+1]){
+//                     int temp = arr[j];
+//                     arr[j] = arr[j+1];
+//                     arr[j+1] = temp;
+//                 }
+//             }
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of array:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         InputArray(arr);
+//         System.out.println("After swapping:");
+//         System.out.println(Arrays.toString(arr));
+//     }
+// }
+//=============================================================================================
+// import java.util.Arrays;
+// import java.util.Scanner;
+// public class coaching{
+//     public static void InputArray(int[]arr) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter array elements:");
+//         for(int i=0; i<arr.length; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         System.out.print("the Sorted array is:");
+//         System.out.println(Arrays.toString(arr));
+//         MedianOfArray(arr);
+//     }
+//     public static void MedianOfArray(int[]arr) {
+//         int length = arr.length;
+//         int midIndex = length/2;
+
+//         if(length%2 == 1){
+//             int median = arr[midIndex];
+//             System.out.println("The median is:"+median);
+//         }
+//         else{
+//             double mid = (arr[midIndex]+arr[midIndex-1])/2;
+//             System.out.println("The median is even:"+mid);
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter array size:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         InputArray(arr);
+//     }
+// }
 
