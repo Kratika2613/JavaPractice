@@ -1450,6 +1450,36 @@ STRING QUESTIONS :-
 //     }
 // }
 
+//==============================================================================================================
+import java.util.Scanner;
+// public class practi
+// {
+// 	public static void main(String[] args) {
+// 	    Scanner sc = new Scanner(System.in);
+//        System.out.println("enter the string:");
+// 	    String str = sc.nextLine();
+        
+//       if(pallindrome(str)){
+//          System.out.println("it is pallindrome");
+//       }
+//       else{
+//          System.out.println("it is not pallindrome");}
+//       }
+// 		 public static boolean pallindrome(String str) {
+//          int start = 0;
+//       int end = str.length()-1;
+//       while(start<end){
+//          if(str.charAt(start)!=str.charAt(end)){
+//             return false;
+//          }
+//          start++;
+//          end--;
+//       }return true;
+		
+// 	}
+// }
+
+//============================================================================================================================
 import java.util.*;
 public class Stringjava{
     public static void main(String[]args){
